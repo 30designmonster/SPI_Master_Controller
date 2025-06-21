@@ -9,7 +9,7 @@ module spi_slave #(
     input  logic        mosi,
     input  logic        cs_n,     // RENAMED: cs_n to show it's active LOW
     output logic        miso,
-    // Optional: parallel interface for more realistic slave
+    //  parallel interface for more realistic slave
     input  logic [DATA_WIDTH-1:0] tx_data,
     output logic [DATA_WIDTH-1:0] rx_data,
     output logic        rx_valid
