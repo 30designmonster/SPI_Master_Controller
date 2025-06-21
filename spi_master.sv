@@ -16,7 +16,7 @@ module spi_master #(
     output logic        sclk,
     output logic        mosi,
     input  logic        miso,
-    output logic        cs_n    // RENAMED: cs_n to show it's active LOW
+    output logic        cs_n    
 );
 
     typedef enum logic [1:0] {IDLE, TRANSFER, DONE_STATE} state_t;
